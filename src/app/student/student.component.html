@@ -1,0 +1,71 @@
+<!-- <ul *ngFor="let s of student">
+  {{s.rn}} || {{s.birthDate}} || {{s.lastName}} || {{s.lastName}} || {{s.parentName}} || {{s.parentPhone}} || {{s.address}}
+
+</ul> -->
+
+
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="rollNo">RollNo</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="rollNo" [(ngModel)]="student.rollNo" name="rollNo" placeholder="enter number">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="birthDate">DateBirth</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="birthDate" [(ngModel)]="student.birthDate"  name="birthDate" placeholder="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" [(ngModel)]="student.firstName"  name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" [(ngModel)]="student.lastName"  name="lastname" placeholder="lastName">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="parentName">parent Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="parentName" [(ngModel)]="student.parentName"  name="lastname" placeholder="parentName">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="parentMobile">Parent Mobile</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="parentMobile" [(ngModel)]="student.parentMobile"  name="lastname" placeholder="parentName">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="address">Address</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="address" [(ngModel)]="student.address"  name="address" placeholder="address">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <input type="submit" value="Submit" (click)="addStudent()">
+      </div>
+    </div>
+  </form>
+</div>

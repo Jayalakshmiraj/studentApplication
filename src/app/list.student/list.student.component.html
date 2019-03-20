@@ -1,0 +1,5 @@
+<ul *ngFor="let s of studentarray">
+  {{s.rollNo}} || {{s.birthDate}} || {{s.firstName}} || {{s.lastName}} || {{s.parentName}} || {{s.parentNumber}} || {{s.address}}
+<button value="deleteButton" (click)="deleteStudent(s)">Delete Button</button>
+</ul>
+<button value="deleteButtonAll" (click)="deleteStudentAll()">X</button>
