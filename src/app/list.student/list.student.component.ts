@@ -20,4 +20,8 @@ export class ListStudentComponent implements OnInit {
     this.studentarray=[];
     localStorage.setItem('student',JSON.stringify(this.studentarray));
   }
+  selectStudent(id){
+    console.log(id)
+    this.router.navigate(['./editStudent',+id]);
+  }
 }

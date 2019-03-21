@@ -15,9 +15,9 @@ student=[];
   }
 
 
-  addStudent(){
-    this.studentService.addStudent(this.student);
+  addStudent(student){
+    this.studentService.addStudent(student);
     this.router.navigate(['./listStudent'])
   }
-  
+
 }

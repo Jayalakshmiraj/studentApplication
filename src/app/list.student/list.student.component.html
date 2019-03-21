@@ -1,5 +1,28 @@
-<ul *ngFor="let s of studentarray">
-  {{s.rollNo}} || {{s.birthDate}} || {{s.firstName}} || {{s.lastName}} || {{s.parentName}} || {{s.parentNumber}} || {{s.address}}
-<button value="deleteButton" (click)="deleteStudent(s)">Delete Button</button>
-</ul>
+
 <button value="deleteButtonAll" (click)="deleteStudentAll()">X</button>
+<div style="overflow-x:auto;">
+  <table class="rwd-table">
+    <tr>
+      <th>RollNo</th>
+      <th>Birth Date</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Parent Name</th>
+      <th>Parent Number</th>
+      <th>Address</th>
+     
+    </tr>
+    <tr *ngFor="let s of studentarray">
+      <td>{{s.rn}}</td>
+      <td>{{s.birthDate}}</td>
+      <td>{{s.firstName}}</td>
+      <td>{{s.lastName}}</td>
+      <td>{{s.parentName}}</td>
+      <td>{{s.parentNumber}}</td>
+      <td>{{s.address}}</td>
+      <button value="deleteButton" (click)="deleteStudent(s)">Delete Button</button>
+<button value="selectButton" (click)="selectStudent(s.rn)">select Button</button>
+
+    </tr>
+    </table>
+    </div>
